@@ -1,20 +1,24 @@
-URxvt.backgroundPixmap: /home/wooosh/bg.png;style=tiled
+!amber
+!URXvt.foreground: rgb:ff/b0/00
 
 !blue
-!*.foreground: rgb:cb/f3/f3 
+URxvt.foreground: rgb:cb/f3/f3 
 
-!amber
-*.foreground: rgb:ff/b0/00
-
-
+URxvt.backgroundPixmap: /home/wooosh/bg.png;style=tiled
 URxvt.borderColor: #323232
-URxvt.font: xft:Terminus:pixelsize=14
-URxvt.boldFont: xft:Terminus:style=Bold:pixelsize=14
+
+URxvt.font: xft:canele:pixelsize=12
+URxvt.boldFont: xft:pretzel:pixelsize=12
+URxvt.letterSpace: 1
+
 *.scrollBar: false
 *.scrollBar_right: false
 *.internalBorder: 8
 
 ! manpager
 manpager.foreground: #222222
-URxvt.font: xft:Go Mono:size=10
-URxvt.boldFont: xft:Go Mono:size=10:style=Bold
+manpager.backgroundPixmap:
+manpager.background: #FFFEF5
+manpager.borderColor: #FFFEF5
+manpager.font: xft:Go Mono:size=10
+manpager.boldFont: xft:Go Mono:size=10:style=Bold
