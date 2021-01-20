@@ -1,0 +1,69 @@
+
+
+DestroyFunc RaiseMoveX
+AddToFunc RaiseMoveX
++ I Raise
++ M $0
++ D $1
+
+DestroyFunc RaiseMove
+AddToFunc RaiseMove
++ I Raise
++ M $0
+# bindings
+Silent Key F1 A C Close
+Mouse 1 T    A RaiseMoveX Move Maximize
+Mouse 1 FS   A RaiseMoveX Move Maximize
+Mouse 3 FS   A RaiseMoveX Resize
+
+
+Style * \
+  SnapGrid 10 10, \
+  MouseFocusClickRaises
+
+# window decorations
+Colorset 1 bg #f4e2d1, sh: rgb:00/ff/00, hi rgb:00/00/ff
+Colorset 2 fg #222222, bg #867C73
+Colorset 3 bg #cccccc
+
+AddToDecor Main
++ TitleStyle Center Height 20
++ TitleStyle MultiPixmap \
+  Main Colorset 3 \
+  -- Flat
++ BorderStyle Colorset 3 -- HiddenHandles NoInset
+
+Style * \
+  StippledTitle, \
+  UseDecor Main, \
+  HandleWidth 4, \
+  Colorset 3, \
+  HighlightColorset 3, \
+  Font "xft:Charcoal:pixelsize=12"
+
+# serial terminal theming
+
+
+AddToDecor Terminal
++ TitleStyle LeftJustified Height 18 -- Flat
++ TitleStyle MultiPixmap \
+    UnderText TiledPixmap border2.png, \
+    LeftOfText TiledPixmap border3.png, \
+    RightOfText TiledPixmap border3.png, \
+    LeftMain TiledPixmap border.png, \
+    RightMain TiledPixmap border.png \
+    -- Raised
++ BorderStyle Colorset 1 -- Raised HiddenHandles 
+
+Style urxvt \
+  !Title, \
+  !StippledTitle, \
+  UseDecor Terminal, \
+  Colorset 2, \
+  HilightColorset 2, \
+  TitleAtBottom, \
+  HandleWidth 16, \
+  TitleFormat DEC VT220%z, \
+  Font "xft:Terminus:style=bold:pixelsize=16"
+
+

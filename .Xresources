@@ -1,0 +1,20 @@
+URxvt.backgroundPixmap: /home/wooosh/bg.png;style=tiled
+
+!blue
+!*.foreground: rgb:cb/f3/f3 
+
+!amber
+*.foreground: rgb:ff/b0/00
+
+
+URxvt.borderColor: #323232
+URxvt.font: xft:Terminus:pixelsize=14
+URxvt.boldFont: xft:Terminus:style=Bold:pixelsize=14
+*.scrollBar: false
+*.scrollBar_right: false
+*.internalBorder: 8
+
+! manpager
+manpager.foreground: #222222
+URxvt.font: xft:Go Mono:size=10
+URxvt.boldFont: xft:Go Mono:size=10:style=Bold
